@@ -19,7 +19,7 @@ def create_person_list(people: list) -> list:
             wife_name = one_dict["wife"]
             p_obj.wife = Person.people[wife_name]
 
-        if dict.get("husband"):
-            husband_name = dict["husband"]
+        if one_dict.get("husband"):
+            husband_name = one_dict["husband"]
             p_obj.husband = Person.people[husband_name]
     return result
